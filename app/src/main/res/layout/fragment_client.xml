@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="12dp"
+              android:layout_marginRight="12dp">
+    <TextView
+        android:id="@+id/name_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/name_tag_text"/>
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:layout_toRightOf="@+id/name_tag"
+        />
+
+    <LinearLayout
+        android:id="@+id/email_address_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/name_tag">
+    <TextView
+        android:id="@+id/email_address_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tag"
+        android:text="@string/email_address_tag_text"/>
+
+    <EditText
+        android:id="@+id/email_address_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/email_address_tag"
+        android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/created_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/email_address_group">
+
+        <TextView
+            android:id="@+id/created_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/created_tag_text"/>
+
+        <TextView
+            android:id="@+id/created_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/created_tag"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/show_sessions_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/created_group"
+        android:layout_centerHorizontal="true"
+        android:text="@string/show_sessions_text"
+        android:textStyle="italic"
+        android:textColor="#4000ff"
+        android:padding="10dp"
+        android:background="#f0f8ff"/>
+
+</RelativeLayout>

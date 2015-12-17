@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PersonalTrainerApp</string>
+
+    <string name="new_client">New Client</string>
+    <string name="title_format">Clients (%1$s)</string>
+    <string name="name_tag_text">Name:</string>
+    <string name="email_address_tag_text">Email Address:</string>
+    <string name="created_tag_text">Added:</string>
+    <string name="show_sessions_text">Show Sessions</string>
+    <string name="delete_client">Delete</string>
+    <string name="save_client">Save</string>
+    <string name="new_session">New Session</string>
+    <string name="client_name_tag">Client:</string>
+    <string name="session_title_tag">Activity:</string>
+    <string name="location_tag">Where:</string>
+    <string name="date_time_stamp_tag">When:</string>
+    <string name="weight_tag">Weight:</string>
+    <string name="delete_session">Delete</string>
+    <string name="save_session">Save</string>
+    <string name="no_geocoder_available">No geocoder available.</string>
+    <string name="no_location_detected">No location detected</string>
+    <string name="service_not_available">Services not available</string>
+    <string name="invalid_lat_long_used">invalid geographic coordinates</string>
+    <string name="address_found">Address found</string>
+    <string name="no_address_found">No address found</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/session_title_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/session_title_tag"/>
+
+    <EditText
+        android:id="@+id/session_title_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/session_title_tag"
+        android:inputType="textCapWords"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/location_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/session_title_tag"
+        android:text="@string/location_tag"/>
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/location_tag"
+        android:layout_below="@+id/session_title_field"
+        />
+
+    <TextView
+        android:id="@+id/date_time_stamp_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/location_tag"
+        android:text="@string/date_time_stamp_tag"/>
+
+    <TextView
+        android:id="@+id/date_time_stamp_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/date_time_stamp_tag"
+        android:layout_below="@+id/location_text"
+        />
+
+    <TextView
+        android:id="@+id/weight_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/date_time_stamp_tag"
+        android:text="@string/weight_tag"/>
+
+    <EditText
+        android:id="@+id/weight_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/weight_tag"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/date_time_stamp_text"
+        />
+
+    <ImageButton
+        android:id="@+id/picture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/weight_text"
+        android:src="@drawable/ic_menu_camera"/>
+
+    <ImageView
+        android:id="@+id/picture_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/picture_button"/>
+
+</RelativeLayout>
